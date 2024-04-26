@@ -1,0 +1,2 @@
+# KorusApp
+Vizsgaremek :)
