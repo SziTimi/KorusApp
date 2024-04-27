@@ -7,11 +7,12 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function __construct()
+    public static function middleware(): array
     {
-        $this->middleware('auth');
+        return [
+            'auth'
+        ];
     }
-
     public function index()
     {
         $users = User::all();
