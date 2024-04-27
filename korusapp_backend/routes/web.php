@@ -12,8 +12,8 @@ Route::get('/', function () {
 Route::get ('/admin.index', [AdminController::class, 'index'])
     ->name('admin.index');
 
-Route::get ('/user.index', [UserController::class, 'index'])
-    ->name('user.index');
+//Route::get ('/user.index', [UserController::class, 'index'])
+  //  ->name('user.index');
 
 Route::get('/login', [AuthController::class, 'loginForm'])
     ->name('loginForm');
