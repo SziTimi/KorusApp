@@ -58,3 +58,5 @@ Route::put('admin/events/{event}', [App\Http\Controllers\Admin\EventController::
 Route::delete('admin/events/{event}', [App\Http\Controllers\Admin\EventController::class, 'destroy'])
     ->name('admin.events.destroy');
 
+/*Route::post('/update.user/{user}', [AdminController::class, 'update'])
+    ->name('users.update');*/
