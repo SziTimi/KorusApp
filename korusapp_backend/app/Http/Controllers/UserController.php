@@ -2,46 +2,50 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
     public static function middleware(): array
-    {
-        return [
-            'auth'
-        ];
-    }
+{
+    return [
+        'auth'
+    ];
+}
+
     public function index()
     {
-        $users = User::all();
-        return response()->json($users);
+
+        return view('user.index');
     }
 
-    public function show($id)
+    public function update(Request $request, User $user)
     {
-        $user = User::findOrFail($id);
-        return response()->json($user);
+        $request->validate([
+            'email' => 'required|email',
+            'address' => 'required|string|max:100',
+            'par' => 'nullable|string|max:10',
+            'date_of_birth' => 'required|date',
+            'mobil' => 'required|string|max:60'
+        ]);
+
+        $user->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $request->password,
+            'role' => $request->role,
+            'par' => $request->par,
+            'par' => $request->par,
+            'date_of_birth' => $request->date_of_birth,
+            'address' => $request->address,
+            'mobil' => $request->mobil
+        ]);
+
+
+
+        return redirect()->back()->with('success', 'User updated successfully!');
     }
 
-    public function store(Request $request)
-    {
-        $user = User::create($request->all());
-        return response()->json($user, 201);
-    }
 
-    public function update(Request $request, $id)
-    {
-        $user = User::findOrFail($id);
-        $user->update($request->all());
-        return response()->json($user);
-    }
-
-    public function destroy($id)
-    {
-        User::destroy($id);
-        return response()->json(null, 204);
-    }
 }
 

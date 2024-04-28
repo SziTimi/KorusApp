@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,8 +12,8 @@ Route::get('/', function () {
 Route::get ('/admin.index', [AdminController::class, 'index'])
     ->name('admin.index');
 
-//Route::get ('/user.index', [UserController::class, 'index'])
-  //  ->name('user.index');
+Route::get ('/user.index', [UserController::class, 'index'])
+    ->name('user.index');
 
 Route::get('/login', [AuthController::class, 'loginForm'])
     ->name('loginForm');
@@ -29,16 +28,33 @@ Route::get('register', [AuthController::class, 'registerForm'])
 Route::post('register', [AuthController::class, 'register'])
     ->name('register');
 
-Route::get('/admin/notifications/create', [NotificationController::class, 'create'])
-    ->name('notifications.create');
-Route::post('/admin/notifications', [NotificationController::class, 'store'])
-    ->name('notifications.store');
 
-// Route to show the edit form
-Route::get('/notifications/{notification}/edit', [NotificationController::class, 'edit'])
-    ->name('notifications.edit');
+Route::post('/update-user/{user}', 'UserController@update')->name('users.update');
 
 
-// Route to submit the update
-Route::put('/notifications/{notification}', [NotificationController::class, 'update'])
-    ->name('notifications.update');
+
+Route::get('admin/events', array(App\Http\Controllers\Admin\EventController::class, 'index'))
+    ->name('admin.events.index');
+
+// Show the form for creating a new event
+Route::get('admin/events/create', [App\Http\Controllers\Admin\EventController::class, 'create'])
+    ->name('admin.events.create');
+
+// Store a newly created event in the database
+Route::post('admin/events', [App\Http\Controllers\Admin\EventController::class, 'store'])
+    ->name('admin.events.store');
+
+// Add additional routes for edit, update, delete if needed
+// For example:
+// Show the form for editing the specified event
+Route::get('admin/events/{event}/edit', [App\Http\Controllers\Admin\EventController::class, 'edit'])
+    ->name('admin.events.edit');
+
+// Update the specified event in the database
+Route::put('admin/events/{event}', [App\Http\Controllers\Admin\EventController::class, 'update'])
+    ->name('admin.events.update');
+
+// Remove the specified event from the database
+Route::delete('admin/events/{event}', [App\Http\Controllers\Admin\EventController::class, 'destroy'])
+    ->name('admin.events.destroy');
+
