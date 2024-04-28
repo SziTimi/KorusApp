@@ -22,10 +22,10 @@ class ModifyUserController extends Controller
             'email' => 'required|email|max:255',
             'mobil' => 'required|string|max:60',
             'address' => 'required|string|max:255',
-            'par' => 'nullable|string|max:10',
+            'par' => 'required|string|max:10',
         ]);
 
         $user->update($validatedData);
-        return redirect()->route('admin.users.show', $user->id)->with('success', 'Tag adatai sikeresen frissítve!');
+        return redirect()->route('admin.users', $user->id)->with('success', 'Tag adatai sikeresen frissítve!');
     }
 }
