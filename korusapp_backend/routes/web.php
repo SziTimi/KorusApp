@@ -44,9 +44,7 @@ Route::get('admin/events/create', [App\Http\Controllers\Admin\EventController::c
 Route::post('admin/events', [App\Http\Controllers\Admin\EventController::class, 'store'])
     ->name('admin.events.store');
 
-// Add additional routes for edit, update, delete if needed
-// For example:
-// Show the form for editing the specified event
+
 Route::get('admin/events/{event}/edit', [App\Http\Controllers\Admin\EventController::class, 'edit'])
     ->name('admin.events.edit');
 
@@ -58,5 +56,12 @@ Route::put('admin/events/{event}', [App\Http\Controllers\Admin\EventController::
 Route::delete('admin/events/{event}', [App\Http\Controllers\Admin\EventController::class, 'destroy'])
     ->name('admin.events.destroy');
 
+Route::get('/admin/users', [App\Http\Controllers\Admin\UserListController::class, 'index'])->name('admin.users');
+
+Route::get('/admin/users/show/{user}', [App\Http\Controllers\Admin\ModifyUserController::class, 'show'])
+    ->name('admin.users.show');
+
+Route::put('/admin/users/update/{user}', [App\Http\Controllers\Admin\ModifyUserController::class, 'update'])
+    ->name('admin.users.update');
 /*Route::post('/update.user/{user}', [AdminController::class, 'update'])
     ->name('users.update');*/
