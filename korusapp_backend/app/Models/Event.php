@@ -9,13 +9,14 @@ class Event extends Model
 {
     use HasFactory;
 
-    protected $table = 'events';
-    public $timestamps = false;
+
+    public $timestamps = true;
 
     protected $fillable = [
         'event_time',
         'event_venue',
         'event_address',
-        'sheet_music_id'
+        'sheet_music_id',
+        'additional_info',
     ];
 }

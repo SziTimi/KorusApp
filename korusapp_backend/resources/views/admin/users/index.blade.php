@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="path/to/your/css/style.css">
 </head>
 <body>
+
+<a href="{{ route('admin.index') }}">Vissza az admin főoldalra</a>
+<hr>
 <div class="container">
     <h1>Tagok adatai</h1>
 
@@ -18,6 +21,7 @@
             <th>Email cím</th>
             <th>Mobil telefonszám</th>
             <th>Cím</th>
+            <th>Szül. dátum</th>
             <th>Szólam</th>
 
         </tr>
@@ -29,6 +33,7 @@
                 <td>{{ $user->email }}</td>
                 <td>{{$user->mobil }}</td>
                 <td>{{$user->address}}</td>
+                <td>{{$user->date_of_birth}}</td>
                 <td>{{$user->par}}</td>
                 <td>
                     <a href="{{ url('/admin/users/show/' . $user->id) }}" class="btn btn-primary">Módosítás</a>

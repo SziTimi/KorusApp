@@ -14,7 +14,7 @@
         <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
         <div>
             <label for="event_time">Dátum:</label>
-            <input type="date" name="event_time" required>
+            <input type="datetime-local" name="event_time" required>
         </div>
         <div>
             <label for="event_venue">Helyszín:</label>
@@ -27,6 +27,10 @@
         <div>
             <label for="sheet_music_id">Kotta sorszáma:</label>
             <input type="number" name="sheet_music_id">
+        </div>
+        <div>
+            <label for="additional_info">További információk:</label>
+            <textarea name="additional_info" id="additional_info" rows="4" class="form-control"></textarea>
         </div>
         <button type="submit">Esemény hozzáadása</button>
     </form>

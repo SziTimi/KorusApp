@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class ModifyUserController extends Controller
 {
@@ -22,8 +23,18 @@ class ModifyUserController extends Controller
             'email' => 'required|email|max:255',
             'mobil' => 'required|string|max:60',
             'address' => 'required|string|max:255',
+            'date_of_birth' => 'required|date',
             'par' => 'required|string|max:10',
+            'password' => 'nullable|string|min:8|confirmed'
         ]);
+
+        if (!empty($validatedData['password'])) {
+            $validatedData['password'] = Hash::make($validatedData['password']);
+        } else {
+            unset($validatedData['password']);
+        }
+
+
 
         $user->update($validatedData);
         return redirect()->route('admin.users', $user->id)->with('success', 'Tag adatai sikeresen frissítve!');

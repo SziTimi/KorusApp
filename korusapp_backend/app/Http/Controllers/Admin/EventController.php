@@ -30,7 +30,8 @@ class EventController extends Controller
             'event_time' => 'required|date',
             'event_venue' => 'nullable|string|max:100',
             'event_address' => 'nullable|string|max:100',
-            'sheet_music_id' => 'nullable|integer'
+            'sheet_music_id' => 'nullable|integer',
+            'additional_info' => 'nullable|string',
         ]);
 
         // Use mass assignment to create a new event

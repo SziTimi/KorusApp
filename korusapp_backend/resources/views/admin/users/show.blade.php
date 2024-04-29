@@ -46,8 +46,20 @@
             <input type="text" id="address" name="address" value="{{old('address', $user->address) }}">
         </div>
         <div>
+            <label for="date_of_birth">Születési dátum</label>
+            <input type="date" id="date_of_birth" name="date_of_birth" value="{{old('date_of_birth', $user->date_of_birth) }}">
+        </div>
+        <div>
             <label for="par">Szólam:</label>
             <input type="text" id="par" name="par" value="{{old('par', $user->par ) }}">
+        </div>
+        <div>
+            <label for="password">Jelszó:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div>
+            <label for="password_confirmation">Jelszó megerősítése:</label>
+            <input type="password" id="password_confirmation" name="password_confirmation">
         </div>
         <button type="submit" class="btn btn-primary">Frissítés</button>
     </form>
