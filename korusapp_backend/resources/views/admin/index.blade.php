@@ -13,7 +13,7 @@ Szia {{ Auth::user()->name }}! Üdv az oldalon :)
 
 
 <hr>
-<a href="{{ route('admin.events.create') }}">Új esemény létrehozása</a>
+<a href="{{ route('admin.events.index') }}">Események</a>
 
 <hr>
 <a href="{{ route('admin.users') }}">Tagok listája</a>

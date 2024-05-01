@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PaymentController;
@@ -34,28 +35,16 @@ Route::post('/update-user/{user}', 'UserController@update')->name('users.update'
 
 
 
-Route::get('admin/events', array(App\Http\Controllers\Admin\EventController::class, 'index'))
-    ->name('admin.events.index');
-
-// Show the form for creating a new event
-Route::get('admin/events/create', [App\Http\Controllers\Admin\EventController::class, 'create'])
-    ->name('admin.events.create');
-
-// Store a newly created event in the database
-Route::post('admin/events', [App\Http\Controllers\Admin\EventController::class, 'store'])
-    ->name('admin.events.store');
+Route::get('/admin/events', [EventController::class, 'index'])->name('admin.events.index');
+Route::get('/admin/events/create', [EventController::class, 'create'])->name('admin.events.create');
+Route::post('/admin/events', [EventController::class, 'store'])->name('admin.events.store');
+Route::get('/admin/events/{id}/edit', [EventController::class, 'edit'])->name('admin.events.edit');
+Route::put('/admin/events/{id}', [EventController::class, 'update'])->name('admin.events.update');
+Route::delete('/admin/events/{id}', [EventController::class, 'destroy'])->name('admin.events.destroy');
 
 
-Route::get('admin/events/{event}/edit', [App\Http\Controllers\Admin\EventController::class, 'edit'])
-    ->name('admin.events.edit');
 
-// Update the specified event in the database
-Route::put('admin/events/{event}', [App\Http\Controllers\Admin\EventController::class, 'update'])
-    ->name('admin.events.update');
 
-// Remove the specified event from the database
-Route::delete('admin/events/{event}', [App\Http\Controllers\Admin\EventController::class, 'destroy'])
-    ->name('admin.events.destroy');
 
 Route::get('/admin/users', [App\Http\Controllers\Admin\UserListController::class, 'index'])->name('admin.users');
 
