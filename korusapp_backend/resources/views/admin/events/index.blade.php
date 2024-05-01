@@ -21,7 +21,7 @@
             <th>Cím</th>
             <th>Kotta</th>
             <th>Tudnivaló</th>
-            <th>Az esemény típusa</th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -34,11 +34,11 @@
                 <td>{{ $event->sheet_music_id }}</td>
                 <td>{{ $event->additional_info }}</td>
                 <td>
-                    <a href="{{ route('admin.events.edit', $event->id) }}" class="btn btn-info">Edit</a>
+                    <a href="{{ route('admin.events.edit', $event->id) }}" class="btn btn-info">Módosítás</a>
                     <form action="{{ route('admin.events.destroy', $event->id) }}" method="POST" onsubmit="return confirm('Are you sure?');" style="display:inline;">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-danger">Delete</button>
+                        <button type="submit" class="btn btn-danger">Törlés</button>
                     </form>
                 </td>
             </tr>
