@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -65,3 +66,8 @@ Route::put('/admin/users/update/{user}', [App\Http\Controllers\Admin\ModifyUserC
     ->name('admin.users.update');
 /*Route::post('/update.user/{user}', [AdminController::class, 'update'])
     ->name('users.update');*/
+
+Route::get('/admin/payments', [PaymentController::class, 'index'])
+    ->name('admin.payments.index');
+
+

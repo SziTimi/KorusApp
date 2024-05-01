@@ -17,3 +17,6 @@ Szia {{ Auth::user()->name }}! Üdv az oldalon :)
 
 <hr>
 <a href="{{ route('admin.users') }}">Tagok listája</a>
+
+<hr>
+<a href="{{ route('admin.payments.index') }}">Befizetések</a>

@@ -33,6 +33,8 @@
             <textarea name="additional_info" id="additional_info" rows="4" class="form-control"></textarea>
         </div>
         <button type="submit">Esemény hozzáadása</button>
+        <hr>
+        <a href="{{ route('admin.index') }}">Vissza a főoldalra</a>
     </form>
 </main>
 <footer>
