@@ -1,19 +1,16 @@
-ADMIN INDEX
-<hr>
+@extends('layouts.admin')
 
-<a href="{{route('logout')}}">
-    Kilépés
-</a>
+@section('title', 'Admin Index')
 
-<hr>
-Szia {{ Auth::user()->name }}! Üdv az oldalon :)
+@section('content')
+    <h1>ADMIN INDEX</h1>
+    <hr>
+    <p>Szia {{ Auth::user()->name }}! Üdv az oldalon :)</p>
+    <hr>
 
-<hr>
-<a href="{{ route('registerForm') }}">Új felhasználó regisztrációja</a>
-
-
-<hr>
-<a href="{{ route('admin.events.create') }}">Új esemény létrehozása</a>
-
-<hr>
-<a href="{{ route('admin.users') }}">Tagok listája</a>
+    <a href="{{ route('admin.events.index') }}" class="btn btn-primary btn-lg btn-block">Események</a>
+    <hr>
+    <a href="{{ route('admin.users') }}" class="btn btn-primary btn-lg btn-block">Tagok listája</a>
+    <hr>
+    <a href="{{ route('admin.payments.index') }}" class="btn btn-primary btn-lg btn-block">Befizetések</a>
+@endsection

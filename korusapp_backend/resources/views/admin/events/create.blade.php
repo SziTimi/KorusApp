@@ -33,10 +33,14 @@
             <textarea name="additional_info" id="additional_info" rows="4" class="form-control"></textarea>
         </div>
         <button type="submit">Esemény hozzáadása</button>
+        <hr>
+        <a href="{{ route('admin.index') }}">Vissza a főoldalra</a>
+        <hr>
+        <a href="{{ route('admin.events.index') }}">Vissza az eseményekhez</a>
     </form>
 </main>
 <footer>
-    <p>Copyright © Your Company 2024</p>
+
 </footer>
 </body>
 </html>

@@ -66,7 +66,7 @@
 
     <a href="{{ route('admin.users') }}">Vissza a tagok listájához</a>
 </div>
-<script src="path/to/your/javascript/file.js"></script>
+
 </body>
 </html>
 

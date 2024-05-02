@@ -1,27 +1,35 @@
-BELÉPÉS
-<form
-    action="{{ route('login') }}"
-    method="POST">
-    @csrf
+@extends('layouts.layout')
 
-    <label for="email">Email:</label>
-    @error('email')
-    Hiba: {{$message}}
-    @enderror
-    <input id="email" name="email"
-           type="email" value="{{ old('email', '') }}"/>
+@section('title', 'Login - Musica Nostra')
 
-    <hr>
+@section('content')
+    <h1>BELÉPÉS</h1>
+    <form action="{{ route('login') }}" method="POST">
+        @csrf
 
-    <label for="password">Jelszó:</label>
-    @error('password')
-    Hiba: {{$message}}
-    @enderror
-    <input id="password" name="password" type="password" value=""/>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            @error('email')
+            <div class="alert alert-danger">Hiba: {{ $message }}</div>
+            @enderror
+            <input id="email" name="email" type="email" value="{{ old('email', '') }}" class="form-control"/>
+        </div>
 
-    <hr>
+        <hr>
 
-    <input type="submit" value="Belépés">
+        <div class="form-group">
+            <label for="password">Jelszó:</label>
+            @error('password')
+            <div class="alert alert-danger">Hiba: {{ $message }}</div>
+            @enderror
+            <input id="password" name="password" type="password" class="form-control"/>
+        </div>
 
-</form>
+        <hr>
+
+        <div class="form-group">
+            <input type="submit" value="Belépés" class="btn btn-primary">
+        </div>
+    </form>
+@endsection
 

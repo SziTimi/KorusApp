@@ -10,7 +10,7 @@ use App\Http\Controllers\Controller;
 
 class EventController extends Controller
 {
-    // Display a listing of the events
+
     public function index()
     {
         $events = Event::all();
@@ -48,17 +48,29 @@ class EventController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
-        //
+        $event = Event::findOrFail($id);
+        return view('admin.events.edit', compact('event'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'event_time' => 'required|date',
+            'event_venue' => 'nullable|string|max:100',
+            'event_address' => 'nullable|string|max:100',
+            'sheet_music_id' => 'nullable|integer',
+            'additional_info' => 'nullable|string',
+        ]);
+
+        $event = Event::findOrFail($id);
+        $event->update($request->all());
+
+        return redirect()->route('admin.events.index')->with('success', 'Event updated successfully!');
     }
 
     /**
