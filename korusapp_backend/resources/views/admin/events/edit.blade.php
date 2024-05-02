@@ -31,7 +31,14 @@
 
         <div class="mb-3">
             <label for="sheet_music_id" class="form-label">Kotta:</label>
-            <input type="number" id="sheet_music_id" name="sheet_music_id" value="{{ old('sheet_music_id', $event->sheet_music_id) }}" class="form-control">
+            <select id="sheet_music_id" name="sheet_music_id" class="form-control">
+                @foreach ($sheetMusics as $music)
+                    <option value="{{ $music->id }}" {{ $event->sheet_music_id == $music->id ? 'selected' : '' }}>
+                        {{ $music->composer }} - {{ $music->song_title }} -
+                        <a href="{{ asset('path/to/pdf/' . $music->sheet_music_pdf) }}" target="_blank">PDF</a>
+                    </option>
+                @endforeach
+            </select>
         </div>
 
         <div class="mb-3">

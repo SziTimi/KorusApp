@@ -31,11 +31,19 @@
                 <td>{{ $event->event_time }}</td>
                 <td>{{ $event->event_venue }}</td>
                 <td>{{ $event->event_address }}</td>
-                <td>{{ $event->sheet_music_id }}</td>
+                <td>
+                    @if ($event->sheetMusic)
+                        {{ $event->sheetMusic->composer }} - {{ $event->sheetMusic->song_title }} -
+                        <a href="{{ asset('storage/pdf/' . $event->sheetMusic->sheet_music_pdf) }}" target="_blank">PDF</a>
+                    @else
+                        Nincs kotta csatolva
+                    @endif</td>
                 <td>{{ $event->additional_info }}</td>
                 <td>
                     <a href="{{ route('admin.events.edit', $event->id) }}" class="btn btn-info">Módosítás</a>
-                    <form action="{{ route('admin.events.destroy', $event->id) }}" method="POST" onsubmit="return confirm('Are you sure?');" style="display:inline;">
+                </td>
+                <td>
+                    <form action="{{ route('admin.events.destroy', $event->id) }}" method="POST" onsubmit="return confirm('Biztos, hogy törlöd??');" style="display:inline;">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger">Törlés</button>

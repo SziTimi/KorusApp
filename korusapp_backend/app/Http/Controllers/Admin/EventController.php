@@ -5,6 +5,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Event;
+use App\Models\SheetMusic;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -13,7 +14,8 @@ class EventController extends Controller
 
     public function index()
     {
-        $events = Event::all();
+       // $events = Event::all();
+        $events = Event::with('sheetMusic')->get(); // Include the related sheet music details
         return view('admin.events.index', compact('events'));
     }
 
@@ -50,8 +52,9 @@ class EventController extends Controller
      */
     public function edit($id)
     {
-        $event = Event::findOrFail($id);
-        return view('admin.events.edit', compact('event'));
+        $event = Event::with('sheetMusic')->findOrFail($id);
+        $sheetMusics = SheetMusic::all(); // Fetch all sheet music records
+        return view('admin.events.edit', compact('event', 'sheetMusics'));
     }
 
     /**

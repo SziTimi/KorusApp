@@ -19,4 +19,10 @@ class Event extends Model
         'sheet_music_id',
         'additional_info',
     ];
+
+    public function sheetMusic(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo('App\Models\SheetMusic', 'sheet_music_id');
+    }
 }
+
