@@ -1,9 +1,9 @@
 @extends('layouts.layout')
 
-@section('title', 'Welcome to Musica Nostra')
+@section('title', 'Üdv a kórus oldalon')
 
 @section('content')
-    <h1>WELCOME TO THE MUSICA NOSTRA APPLICATION</h1>
+    <h1>ÜDV A KÓRUS OLDALÁN</h1>
     <hr>
-    <a href="{{ route('loginForm') }}" class="btn btn-primary">Belépés (Login)</a>
+    <a href="{{ route('loginForm') }}" class="btn btn-primary">Belépés</a>
 @endsection

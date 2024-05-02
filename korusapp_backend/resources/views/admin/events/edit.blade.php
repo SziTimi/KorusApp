@@ -8,38 +8,38 @@
 </head>
 <body>
 <div class="container mt-4">
-    <h1>Edit Event</h1>
+    <h1>Esemény módosítása</h1>
 
     <form action="{{ route('admin.events.update', $event->id) }}" method="POST">
         @csrf
         @method('PUT')
 
         <div class="mb-3">
-            <label for="event_time" class="form-label">Event Time:</label>
+            <label for="event_time" class="form-label">Időpont:</label>
             <input type="datetime-local" id="event_time" name="event_time" value="{{ old('event_time', $event->event_time) }}" required class="form-control">
         </div>
 
         <div class="mb-3">
-            <label for="event_venue" class="form-label">Event Venue:</label>
+            <label for="event_venue" class="form-label">Helyszín:</label>
             <input type="text" id="event_venue" name="event_venue" value="{{ old('event_venue', $event->event_venue) }}" class="form-control">
         </div>
 
         <div class="mb-3">
-            <label for="event_address" class="form-label">Event Address:</label>
+            <label for="event_address" class="form-label">cím:</label>
             <input type="text" id="event_address" name="event_address" value="{{ old('event_address', $event->event_address) }}" class="form-control">
         </div>
 
         <div class="mb-3">
-            <label for="sheet_music_id" class="form-label">Sheet Music ID:</label>
+            <label for="sheet_music_id" class="form-label">Kotta:</label>
             <input type="number" id="sheet_music_id" name="sheet_music_id" value="{{ old('sheet_music_id', $event->sheet_music_id) }}" class="form-control">
         </div>
 
         <div class="mb-3">
-            <label for="additional_info" class="form-label">Additional Info:</label>
+            <label for="additional_info" class="form-label">További információ:</label>
             <textarea id="additional_info" name="additional_info" class="form-control">{{ old('additional_info', $event->additional_info) }}</textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary">Update Event</button>
+        <button type="submit" class="btn btn-primary">Frissítés</button>
     </form>
 </div>
 
