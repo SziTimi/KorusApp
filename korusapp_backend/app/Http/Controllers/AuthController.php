@@ -39,7 +39,7 @@ class AuthController extends Controller
 
 
 
-    public function logout(Request $request)
+    public function logout(Request $request): RedirectResponse
     {
         Auth::logout();
 
@@ -54,7 +54,7 @@ class AuthController extends Controller
         return view('auth.register');
     }
 
-    public function register(RegisterRequest $request)
+    public function register(RegisterRequest $request): RedirectResponse
     {
         $user = User::create($request->validated());
         //Auth::login($user);

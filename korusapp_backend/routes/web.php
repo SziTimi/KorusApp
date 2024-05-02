@@ -3,11 +3,16 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-}) ->name('welcome');
+}) ->name('welcome');*/
+
+
+
+Route::view("/", 'welcome')->name('welcome');
 
 Route::get ('/admin.index', [AdminController::class, 'index'])
     ->name('admin.index');
