@@ -12,6 +12,9 @@ class Payment extends Model
     use HasFactory, Notifiable;
     protected $table = 'payments';
 
+    public $timestamps = true;
+
+
     public function user()
     {
         return $this->belongsTo(User::class, 'members_id');

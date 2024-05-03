@@ -64,4 +64,8 @@ Route::put('/admin/users/update/{user}', [App\Http\Controllers\Admin\ModifyUserC
 Route::get('/admin/payments', [PaymentController::class, 'index'])
     ->name('admin.payments.index');
 
+Route::patch('/admin/payments/{payment}', [PaymentController::class, 'update'])
+    ->name('admin.payments.update');
+
+
 

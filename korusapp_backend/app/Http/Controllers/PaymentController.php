@@ -17,5 +17,15 @@ class PaymentController extends Controller
         //return view('admin.payments.index', ['payments' => $payments]);
     }
 
+    public function update(Request $request, $id)
+    {
+        $payment = Payment::findOrFail($id);
+        $additionalAmount = $request->input('additional_amount');
+        $payment->amount_paid += $additionalAmount; // Update the amount paid
+        $payment->save(); // Save the changes
+
+        return back()->with('success', 'Befizetés frissítve!');
+    }
+
 
 }

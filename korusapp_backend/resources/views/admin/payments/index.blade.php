@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment List</title>
+    <title>Befizetések</title>
 </head>
 <body>
-<h1>Payments List</h1>
+
+<a href="{{ route('admin.index') }}">Vissza a főoldalra</a>
+<hr>
+<h1>Befizetések</h1>
 <table>
     <thead>
     <tr>
@@ -19,9 +22,18 @@
     @foreach ($payments as $payment)
         <tr>
 
-            <td>{{ $payment->user ? $payment->user->name : 'No user found' }}</td>
+            <td>{{ $payment->user ? $payment->user->name : 'Nincs felhasználó' }}</td>
             <td>{{ $payment->amount_paid }}</td>
             <td>{{ $payment->payment_date }}</td>
+            <td>
+                <form action="{{ route('admin.payments.update', $payment->id) }}" method="POST">
+                    @csrf
+                    @method('PATCH')
+                    <input type="number" name="additional_amount" placeholder="Hozzáadott összeg" required>
+                    <button type="submit">Befizetés frissítése</button>
+
+                </form>
+            </td>
         </tr>
     @endforeach
     </tbody>
