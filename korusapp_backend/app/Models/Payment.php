@@ -10,7 +10,10 @@ class Payment extends Model
 
 {
     use HasFactory, Notifiable;
-    protected $table = 'payments';
+    //protected $table = 'payments';
+    protected $fillable = [
+        'amount_paid', 'payment_date', 'members_id' // Ensure 'members_id' is fillable if setting explicitly
+    ];
 
     public $timestamps = true;
 
@@ -19,4 +22,5 @@ class Payment extends Model
     {
         return $this->belongsTo(User::class, 'members_id');
     }
+
 }

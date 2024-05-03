@@ -15,7 +15,9 @@
     <tr>
         <th>Tag neve</th>
         <th>Befizetett összeg</th>
-        <th>Befizetés dátuma</th>
+        <th>Legutolsó befizetés időpontja</th>
+
+
     </tr>
     </thead>
     <tbody>

@@ -44,5 +44,18 @@ class User extends Authenticatable
         return $this->hasMany(Payment::class, 'members_id');
     }
 
+    protected static function boot()
+    {
+        parent::boot();
+
+        // After creating a new user, automatically create a related payment record
+        static::created(function ($user) {
+            $user->payments()->create([
+                'amount_paid' => 0, // Set initial amount paid to zero
+                'payment_date' => now(), // Set the payment date to the current timestamp
+            ]);
+        });
+    }
+
 
 }

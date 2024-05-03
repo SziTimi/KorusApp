@@ -22,7 +22,9 @@ class PaymentController extends Controller
         $payment = Payment::findOrFail($id);
         $additionalAmount = $request->input('additional_amount');
         $payment->amount_paid += $additionalAmount; // Update the amount paid
+        $payment->payment_date = now();
         $payment->save(); // Save the changes
+
 
         return back()->with('success', 'Befizetés frissítve!');
     }
