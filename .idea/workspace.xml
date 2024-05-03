@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="929d031a-5054-46db-9d4f-1edb7f8f2879" name="Changes" comment="Welcome Modelbe kiszervezve" />
+    <list default="true" id="929d031a-5054-46db-9d4f-1edb7f8f2879" name="Changes" comment="Kotta id helyett szerző, műcím és (még nem működő) elérési link létrehozva.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/korusapp_backend/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/korusapp_backend/app/Http/Controllers/AuthController.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +18,27 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SziTimi&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="49b68669-c545-4d14-8cf2-adfc3f5ed261" />
+        <option name="url" value="https://github.com/SziTimi/KorusApp" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -146,6 +172,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -172,6 +202,8 @@
       <option name="presentableId" value="Default" />
       <updated>1714635257472</updated>
       <workItem from="1714635258541" duration="88000" />
+      <workItem from="1714642385569" duration="1786000" />
+      <workItem from="1714658157648" duration="2394000" />
     </task>
     <task id="LOCAL-00001" summary="Welcome Modelbe kiszervezve">
       <option name="closed" value="true" />
@@ -181,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714635315634</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Kotta id helyett szerző, műcím és (még nem működő) elérési link létrehozva.">
+      <option name="closed" value="true" />
+      <created>1714642931670</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714642931670</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +229,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Welcome Modelbe kiszervezve" />
-    <option name="LAST_COMMIT_MESSAGE" value="Welcome Modelbe kiszervezve" />
+    <MESSAGE value="Kotta id helyett szerző, műcím és (még nem működő) elérési link létrehozva." />
+    <option name="LAST_COMMIT_MESSAGE" value="Kotta id helyett szerző, műcím és (még nem működő) elérési link létrehozva." />
   </component>
 </project>

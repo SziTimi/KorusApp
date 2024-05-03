@@ -12,7 +12,9 @@ class PaymentController extends Controller
         // Fetch payments with member data
         $payments = Payment::with('user')->get();
 
-        return view('admin.payments.index', ['payments' => $payments]);
+        return view('admin.payments.index', compact('payments'));
+
+        //return view('admin.payments.index', ['payments' => $payments]);
     }
 
 

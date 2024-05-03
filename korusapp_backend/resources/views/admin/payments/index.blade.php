@@ -19,7 +19,7 @@
     @foreach ($payments as $payment)
         <tr>
 
-            <td>{{ $payment->members_id }}</td>
+            <td>{{ $payment->user ? $payment->user->name : 'No user found' }}</td>
             <td>{{ $payment->amount_paid }}</td>
             <td>{{ $payment->payment_date }}</td>
         </tr>
