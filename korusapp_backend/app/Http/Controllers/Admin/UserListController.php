@@ -13,4 +13,7 @@ class UserListController extends Controller
         return view('admin.users.index', compact('users')); // Pass users to the view
     }
 
+
+
+
 }

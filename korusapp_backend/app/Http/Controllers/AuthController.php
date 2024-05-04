@@ -33,8 +33,31 @@ class AuthController extends Controller
                 return redirect()->route('user.index');
             }
 
+        } else {
+            // If authentication fails, redirect back with an error message
+            return back()->withErrors([
+                'email' => 'The provided credentials do not match our records.',
+            ]);
+          // return redirect()->route('loginForm');
+        }
 
-           return redirect()->route('loginForm');
+
+    }
+
+    public function apiLogin(LoginRequest $request)
+    {
+        if (Auth::attempt($request->validated())) {
+            $request->session()->regenerate();
+            $user = Auth::user();
+
+            // Return user data and a success status
+            return response()->json([
+                'message' => 'Login successful',
+                'user' => $user,
+            ], 200);
+        } else {
+            // Return error message
+            return response()->json(['message' => 'Invalid credentials'], 401);
         }
     }
 
