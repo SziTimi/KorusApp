@@ -8,7 +8,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="{{ route('admin.index') }}">Musica Nostra - Admin</a>
+    <a class="navbar-brand" href="{{ route('admin.index') }}">ADMIN - Főoldal</a>
     <div class="navbar-nav">
         <a class="nav-item nav-link btn btn-info mr-2" href="{{ route('logout') }}">Kilépés</a>
         <a class="nav-item nav-link btn btn-secondary" href="{{ route('registerForm') }}">Új felhasználó regisztrációja</a>

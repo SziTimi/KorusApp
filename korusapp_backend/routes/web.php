@@ -14,13 +14,13 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::view("/", 'welcome')->name('welcome');
+Route::view('/', 'welcome')->name('welcome');
 
 Route::get ('/admin.index', [AdminController::class, 'index'])
     ->name('admin.index');
 
-Route::get ('/user.index', [UserController::class, 'index'])
-    ->name('user.index');
+/*Route::get ('/user.index', [UserController::class, 'index'])
+    ->name('user.index');*/
 
 Route::get('/login', [AuthController::class, 'loginForm'])
     ->name('loginForm');
@@ -34,6 +34,9 @@ Route::get('register', [AuthController::class, 'registerForm'])
     ->name('registerForm');
 Route::post('register', [AuthController::class, 'register'])
     ->name('register');
+
+Route::get('/denied', 'App\Http\Controllers\UserController@denied')->name('user.denied');
+
 
 
 Route::post('/update-user/{user}', 'UserController@update')->name('users.update');

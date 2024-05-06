@@ -1,3 +1,9 @@
+@extends('layouts.admin')
+
+@section('title', 'Admin Index')
+
+
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +16,7 @@
 <div class="container mt-4">
     <h1>Események</h1>
     <a href="{{ route('admin.events.create') }}" class="btn btn-primary mb-3">Új esemény létrehozása</a>
-    <a href="{{ route('admin.index') }}" class="btn btn-primary mb-3">Vissza a főoldalra</a>
+
 
     <table class="table">
         <thead class="table-dark">
@@ -43,10 +49,7 @@
                     <a href="{{ route('admin.events.edit', $event->id) }}" class="btn btn-info">Módosítás</a>
                 </td>
                 <td>
-                    <form action="{{ route('admin.events.destroy', $event->id) }}" method="POST" onsubmit="return confirm('Biztos, hogy törlöd??');" style="display:inline;">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger">Törlés</button>
+
                     </form>
                 </td>
             </tr>
@@ -58,4 +61,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+@endsection
 

@@ -30,7 +30,8 @@ class AuthController extends Controller
             if (Auth::user()->role === 'admin') {
                 return redirect()->route('admin.index');
             } else {
-                return redirect()->route('user.index');
+                session()->flash('error', 'Nem vagy admin, nincs jogod belépni');
+                return redirect()->route('user.denied');
             }
 
         } else {
@@ -38,29 +39,29 @@ class AuthController extends Controller
             return back()->withErrors([
                 'email' => 'The provided credentials do not match our records.',
             ]);
-          // return redirect()->route('loginForm');
+            return redirect()->route('loginForm');
         }
 
 
     }
 
-    public function apiLogin(LoginRequest $request)
-    {
-        if (Auth::attempt($request->validated())) {
-            $request->session()->regenerate();
-            $user = Auth::user();
+    /* public function apiLogin(LoginRequest $request)
+     {
+         if (Auth::attempt($request->validated())) {
+             $request->session()->regenerate();
+             $user = Auth::user();
 
-            // Return user data and a success status
-            return response()->json([
-                'message' => 'Login successful',
-                'user' => $user,
-            ], 200);
-        } else {
-            // Return error message
-            return response()->json(['message' => 'Invalid credentials'], 401);
-        }
-    }
-
+             // Return user data and a success status
+             return response()->json([
+                 'message' => 'Login successful',
+                 'user' => $user,
+             ], 200);
+         } else {
+             // Return error message
+             return response()->json(['message' => 'Invalid credentials'], 401);
+         }
+     }
+ */
 
 
     public function logout(Request $request): RedirectResponse

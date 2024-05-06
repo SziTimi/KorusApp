@@ -8,7 +8,10 @@
 </head>
 <body>
 <header>
-    <!-- Navigation bar here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{ route('admin.index') }}">ADMIN - Főoldal</a>
+
+    </nav>
 </header>
 
 <div class="container">

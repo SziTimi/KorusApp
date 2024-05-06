@@ -1,12 +1,20 @@
+@extends('layouts.admin')
+
+@section('title', 'Admin Index')
+
+
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modify User</title>
-    <link rel="stylesheet" href="path/to/your/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 </head>
 <body>
+<hr>
+<a href="{{ route('admin.users') }}" class="btn btn-primary mb-3">Vissza a tagok listájához</a>
 <div class="container">
     <h1>Tag adatainak módosítása</h1>
 
@@ -64,9 +72,10 @@
         <button type="submit" class="btn btn-primary">Frissítés</button>
     </form>
 
-    <a href="{{ route('admin.users') }}">Vissza a tagok listájához</a>
-</div>
 
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+@endsection
 

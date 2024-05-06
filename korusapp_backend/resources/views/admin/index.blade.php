@@ -3,7 +3,7 @@
 @section('title', 'Admin Index')
 
 @section('content')
-    <h1>ADMIN INDEX</h1>
+    <h1>ADMIN FŐOLDAL</h1>
     <hr>
     <p>Szia {{ Auth::user()->name }}! Üdv az oldalon :)</p>
     <hr>

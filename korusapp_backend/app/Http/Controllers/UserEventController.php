@@ -14,13 +14,13 @@ class UserEventController extends Controller
         // Transform the collection to exclude certain fields
         $filteredEvents = $userEvents->map(function ($event) {
             return [
-                'id' => $event->id,
+               // 'id' => $event->id,
                 'event_time' => $event->event_time,
                 'event_venue' => $event->event_venue,
                 'event_address' => $event->event_address,
                 'additional_info' => $event->additional_info,
                 'sheetMusic' => [
-                    'id' => $event->sheetMusic->id ?? null,
+                    //'id' => $event->sheetMusic->id ?? null,
                     'composer' => $event->sheetMusic->composer ?? null,
                     'song_title' => $event->sheetMusic->song_title ?? null,
                     'sheet_music_pdf' => $event->sheetMusic->sheet_music_pdf ?? null
