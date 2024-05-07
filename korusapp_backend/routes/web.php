@@ -19,8 +19,8 @@ Route::view('/', 'welcome')->name('welcome');
 Route::get ('/admin.index', [AdminController::class, 'index'])
     ->name('admin.index');
 
-/*Route::get ('/user.index', [UserController::class, 'index'])
-    ->name('user.index');*/
+Route::get ('/user.index', [App\Http\Controllers\UserController::class, 'index'])
+    ->name('user.index');
 
 Route::get('/login', [AuthController::class, 'loginForm'])
     ->name('loginForm');
@@ -39,7 +39,7 @@ Route::get('/denied', 'App\Http\Controllers\UserController@denied')->name('user.
 
 
 
-Route::post('/update-user/{user}', 'UserController@update')->name('users.update');
+Route::post('/update-user/{user}', 'App\Http\Controllers\UserController@update')->name('users.update');
 
 
 

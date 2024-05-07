@@ -4,9 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="929d031a-5054-46db-9d4f-1edb7f8f2879" name="Changes" comment="Kotta id helyett szerző, műcím és (még nem működő) elérési link létrehozva.">
+    <list default="true" id="4fe087fb-57df-4967-82cf-cf7e98216685" name="Changes" comment="Badott">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/korusapp11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_backend/config/sanctum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_backend/database/migrations/2024_05_04_053826_create_personal_access_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/src/components/layouts/NavBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/src/utils/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/src/views/AbsenceForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/src/views/Calendar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/src/views/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/src/views/MusicLibaryLink.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/src/views/News.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/src/views/Registration.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/korusapp_frontend/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/korusapp_backend/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/korusapp_backend/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/korusapp_backend/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/korusapp_backend/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/korusapp_backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/korusapp_backend/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,151 +45,132 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
-      </GitPushTagMode>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;SziTimi&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="49b68669-c545-4d14-8cf2-adfc3f5ed261" />
-        <option name="url" value="https://github.com/SziTimi/KorusApp" />
-      </UrlAndAccount>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
     <include_path>
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/complexity" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/comparator" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/environment" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/exporter" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/object-enumerator" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/lines-of-code" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/object-reflector" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/version" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/type" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/spatie/backtrace" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/spatie/ignition" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/spatie/flare-client-php" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/spatie/laravel-ignition" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/clock" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/deprecation-contracts" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/css-selector" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/event-dispatcher" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/error-handler" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/finder" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/event-dispatcher-contracts" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/http-kernel" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/http-foundation" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/mime" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/mailer" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-intl-grapheme" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-intl-normalizer" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-intl-idn" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-php83" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-php80" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-uuid" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/routing" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/translation" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/string" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/uid" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/translation-contracts" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-php83" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/tijsverkoyen/css-to-inline-styles" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/uid" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/voku/portable-ascii" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/brick/math" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/composer" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/dflydev/dot-access-data" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/doctrine/lexer" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/doctrine/inflector" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/dragonmantank/cron-expression" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/egulias/email-validator" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/fakerphp/faker" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/filp/whoops" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/guzzlehttp/uri-template" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/guzzlehttp/guzzle" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/guzzlehttp/psr7" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/guzzlehttp/promises" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/guzzlehttp/uri-template" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/hamcrest/hamcrest-php" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/laravel/pint" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/laravel/framework" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/laravel/sail" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/laravel/prompts" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/laravel/sail" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/laravel/serializable-closure" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/league/commonmark" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/league/flysystem" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/league/config" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/laravel/pint" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/mockery/mockery" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/monolog/monolog" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/league/config" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/nette/utils" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/nunomaduro/termwind" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/nunomaduro/collision" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phpunit/php-text-template" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/phpoption/phpoption" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phpunit/php-text-template" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phpunit/php-invoker" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phpunit/php-timer" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/clock" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/container" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/http-client" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/http-message" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/clock" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/ralouphie/getallheaders" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/ramsey/uuid" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/ramsey/collection" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/cli-parser" />
-      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/korusapp_backend/vendor/symfony/mime" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2ftzeZFznr14PVebCzh5IceN6W1" />
+  <component name="ProjectId" id="2fzZXuKAGRmlOWNDwY4ny5fGWsZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -171,7 +179,6 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -189,47 +196,35 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-php-predefined-ba97393d7c68-b4dcf6bb9de9-com.jetbrains.php.sharedIndexes-PS-233.13135.108" />
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14808.18" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="929d031a-5054-46db-9d4f-1edb7f8f2879" name="Changes" comment="" />
-      <created>1714635257472</created>
+      <changelist id="4fe087fb-57df-4967-82cf-cf7e98216685" name="Changes" comment="" />
+      <created>1714805910897</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714635257472</updated>
-      <workItem from="1714635258541" duration="88000" />
-      <workItem from="1714642385569" duration="1786000" />
-      <workItem from="1714658157648" duration="2394000" />
+      <updated>1714805910897</updated>
+      <workItem from="1714805913478" duration="10070000" />
+      <workItem from="1715066837164" duration="196000" />
+      <workItem from="1715070403275" duration="39000" />
+      <workItem from="1715070457452" duration="185000" />
+      <workItem from="1715070786375" duration="30000" />
+      <workItem from="1715070831287" duration="70000" />
+      <workItem from="1715070956326" duration="35000" />
+      <workItem from="1715071006957" duration="2440000" />
+      <workItem from="1715115281996" duration="475000" />
     </task>
-    <task id="LOCAL-00001" summary="Welcome Modelbe kiszervezve">
-      <option name="closed" value="true" />
-      <created>1714635315634</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1714635315634</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Kotta id helyett szerző, műcím és (még nem működő) elérési link létrehozva.">
-      <option name="closed" value="true" />
-      <created>1714642931670</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1714642931670</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Welcome Modelbe kiszervezve" />
-    <MESSAGE value="Kotta id helyett szerző, műcím és (még nem működő) elérési link létrehozva." />
-    <option name="LAST_COMMIT_MESSAGE" value="Kotta id helyett szerző, műcím és (még nem működő) elérési link létrehozva." />
+    <MESSAGE value="Badott" />
+    <option name="LAST_COMMIT_MESSAGE" value="Badott" />
   </component>
 </project>

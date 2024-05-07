@@ -16,12 +16,13 @@ class UserController extends Controller
 }
 
     public function index()
-    {
+{
 
-        return view('user.index');
-    }
+    return view('user.index');
+}
 
-    public function getAllUsers(): JsonResponse
+
+    /*public function getAllUsers(): JsonResponse
     {
         // Fetch users with only the specified fields
         $users = User::select('name', 'email', 'mobil')->get();
@@ -42,7 +43,7 @@ class UserController extends Controller
     public function denied()
     {
         return view('user.denied');
-    }
+    }*/
 
 
 
